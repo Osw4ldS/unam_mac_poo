@@ -74,4 +74,15 @@ public class Automovil {
     public String getModel() {
         return model;
     }
+
+    public String showInfo() {
+        return "Tamaño: " + size +
+               "\nCondición: " + condition +
+               "\nPrecio: " + price +
+               "\nColor: " + color +
+               "\nApariencia: " + appearence +
+               "\nMarca: " + brand +
+               "\nTracción: " + traction +
+               "\nModelo: " + model;
+    }
 }

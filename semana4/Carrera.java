@@ -74,4 +74,36 @@ public class Carrera {
     public int getDuration() {
         return duration;
     }
+
+    public String showInfo() {
+        String showSubjects = "";
+        String showPlanKeys = "";
+        String showEntryReq = "";
+        String showDegreeOptions = "";
+
+        for(int i = 0; i < subjects.length; i++) {
+            showSubjects += "\t " + (i+1) + ". " + subjects[i] + "\n";
+        }
+
+        for(int i = 0; i < planKeys.length; i++) {
+            showPlanKeys += "\t " + (i+1) + ". " + planKeys[i] + "\n";
+        }
+
+        for(int i = 0; i < entryReq.length; i++) {
+            showEntryReq += "\t " + (i+1) + ". " + entryReq[i] + "\n";
+        }
+
+        for(int i = 0; i < degreeOptions.length; i++) {
+            showDegreeOptions += "\t " + (i+1) + ". " + degreeOptions[i] + "\n";
+        }
+
+        return "Título: " + title +
+               "\nMaterias: " + showSubjects +
+               "\nÁrea: " + area +
+               "\nPlan de estudios: " + showPlanKeys +
+               "\nEspecialidades: " + specialties +
+               "\nRequsitos de ingreso: " + showEntryReq +
+               "\nOpciones de titulación: " + showDegreeOptions +
+               "\nDuración: " + duration + " años.";
+    }
 }
